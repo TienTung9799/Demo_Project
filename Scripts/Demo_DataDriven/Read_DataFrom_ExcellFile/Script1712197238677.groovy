@@ -29,5 +29,5 @@ WebUI.click(findTestObject('Page_OrangeHRM/button_Login'))
 
 WebUI.delay(5)
 
-WebUI.verifyTextPresent('tung1234', false)
+WebUI.verifyTextPresent('tung1234457w6', false)
 
