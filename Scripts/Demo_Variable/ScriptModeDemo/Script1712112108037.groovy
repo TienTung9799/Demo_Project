@@ -29,5 +29,7 @@ WebUI.click(findTestObject('Page_OrangeHRM/button_Login'))
 
 WebUI.delay(5)
 
-WebUI.verifyTextPresent('jadnfje', false)
+WebUI.verifyTextPresent('Dashboard', false)
+
+WebUI.closeBrowser()
 
