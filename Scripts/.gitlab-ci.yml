@@ -1,0 +1,16 @@
+image: katalonstudio/katalon
+
+stages:
+  - test
+
+variables:
+  KATALON_VERSION: "9.3.2"
+  KATALON_PATH: "/katalon/katalon"
+
+test_job:
+  stage: test
+  script:
+    - echo "Start Katalon Test"
+    - $KATALON_PATH -runMode=console -projectPath="/path/to/your/project" -testSuitePath="Test Suites/Your_Test_Suite" -browserType="Chrome" -apiKey="your_api_key" -executionProfile="default"
+  only:
+    - master
